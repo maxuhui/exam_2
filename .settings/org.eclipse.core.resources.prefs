@@ -1,2 +1,3 @@
 eclipse.preferences.version=1
+encoding//src/main/java/com/springibatis/dao=UTF-8
 encoding//src/test/java/com/springibatis/dao/UserDaoTest.java=UTF-8

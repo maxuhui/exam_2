@@ -3,11 +3,11 @@
 "http://ibatis.apache.org/dtd/sql-map-2.dtd" >
 <sqlMap namespace="UserDao">
   <select id="getUserById" resultClass="com.springibatis.pojo.User">
-    select * from user where userId = #userId#
+    select * from users where userId = #userId#
   </select>
   
   <insert id="addUser" parameterClass="com.springibatis.pojo.User">
-  	insert into user 
+  	insert into users 
   	(userName, password, userTel)
   	values 
   	(#userName#, #password#, #userTel#)
@@ -17,7 +17,7 @@
   </insert>
   
   <update id="updateUser" parameterClass="com.springibatis.pojo.User">
-  	update user
+  	update users
   	set password = #password#, userTel = #userTel#
   	where userId = #userId#
   </update>
