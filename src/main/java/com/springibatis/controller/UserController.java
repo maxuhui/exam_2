@@ -19,4 +19,6 @@ public class UserController {
     public @ResponseBody Object userInfo(@PathVariable String userId) {
         return userService.getUserById(userId);
     }
+    
+    
 }
